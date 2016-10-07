@@ -23,6 +23,12 @@ net Xen axis.0.amp-enable-out => pluto-step.stepgen.0.enable
 net Yen axis.1.amp-enable-out => pluto-step.stepgen.1.enable
 net Zen axis.2.amp-enable-out => pluto-step.stepgen.2.enable
 
+net home-x <= pluto-step.din.00-not
+#net home-y <= pluto-step.din.00 bit out
+#net home-z <= pluto-step.din.00 bit out
+
+
+
 # create a signal for the estop loopback
 net estop-loop iocontrol.0.user-enable-out iocontrol.0.emc-enable-in
 
