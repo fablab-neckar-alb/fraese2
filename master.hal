@@ -23,9 +23,9 @@ net Xen axis.0.amp-enable-out => pluto-step.stepgen.0.enable
 net Yen axis.1.amp-enable-out => pluto-step.stepgen.1.enable
 net Zen axis.2.amp-enable-out => pluto-step.stepgen.2.enable
 
-net home-x <= pluto-step.din.00-not
-#net home-y <= pluto-step.din.00 bit out
-#net home-z <= pluto-step.din.00 bit out
+net home-x <= pluto-step.din.00
+net home-y <= pluto-step.din.08
+net home-z <= pluto-step.din.09
 
 
 
